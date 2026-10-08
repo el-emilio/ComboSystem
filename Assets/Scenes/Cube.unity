@@ -588,6 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondOne: {fileID: 2093434572}
+  comboSound: {fileID: 8300000, guid: 88c104ffed077e248909f2b827ab0607, type: 3}
 --- !u!114 &2093434574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstOne: {fileID: 2093434572}
+  comboSound: {fileID: 8300000, guid: 2f344adc0713d1641857451b97ddb922, type: 3}
 --- !u!114 &2093434575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   REALSecondOne: {fileID: 2093434572}
+  comboSound: {fileID: 8300000, guid: b8aff553c6a769740b28e186f26f907e, type: 3}
   comboUp: 0
   comboDown: 0
   comboQ: 0
