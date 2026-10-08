@@ -4,6 +4,8 @@ using System.Collections;
 public class FirstCombo : MonoBehaviour
 {
     public Animator FirstOne;
+    public AudioClip comboSound;          // <- arrastra combo1_sound aquí
+    private AudioSource audioSource;
 
     //↑↑↓↓QA
 
@@ -13,8 +15,15 @@ public class FirstCombo : MonoBehaviour
     private int comboA = 0;
 
     private float limit = 3.0f;
-
     private float lastTime = 0f;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+    }
 
     void Update()
     {
@@ -64,6 +73,7 @@ public class FirstCombo : MonoBehaviour
             else
             {
                 FirstOne.SetTrigger("Combo1");
+                if (comboSound != null) audioSource.PlayOneShot(comboSound);
                 Reiniciar();
             }
         }
